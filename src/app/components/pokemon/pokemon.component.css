@@ -1,0 +1,85 @@
+.titulo-buscador{
+    text-align: center;
+}
+
+.inputBuscador{
+    border-radius: 4px;
+    padding-top: 5px;
+    margin-left: 38px;
+ 
+}
+.btnBuscador{
+    outline: none;
+    border: none;
+    border-radius: 200px;
+    background-color:transparent ;
+
+}
+.btnPokebola{
+    background-repeat: unset;
+    background-attachment: unset;
+    width: 66px;
+    height: 66px;
+    border-radius: 238px;
+    display: flex;
+    margin-left: 623px;
+    
+}
+
+
+
+.pokemon-grid{
+    display: grid;
+    grid-gap: 16px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+}
+
+.pokemon-grid .box{
+    width: 80%;
+    height: 400px;
+    margin-top: 40px;
+    /*box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.3);*/
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    overflow:hidden; 
+
+    
+  
+    /* #1 */
+    border: 5px solid hsl(0, 0%, 40%);
+    
+    /* #2 */
+    padding: 5px;
+    background: rgb(235, 235, 235);
+    
+    /* #3 */
+    outline: 5px solid hsl(0, 0%, 60%);
+    
+    /* #4 AND INFINITY!!! (CSS3 only) */
+    box-shadow:
+        0 0 0 10px hsl(0, 0%, 80%),
+        0 0 0 15px hsl(0, 0%, 90%);
+}
+.pokemon-grid h1{
+    text-align: center;
+}
+.pokemon-grid p{
+    text-align: center;
+}
+.pokemon-grid img{
+    display: block;
+    margin: 0 auto;
+}
+
+.pokemon-grid .box:hover{
+    transform: scale(1.5);
+}
+
+.pokeimagen{
+    width: 150px;
+}
+.sprite{
+    width: 150px;
+}
+

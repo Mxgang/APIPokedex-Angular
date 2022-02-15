@@ -1,0 +1,20 @@
+<div class="titulo-buscador">
+    
+        <input type="text" class="inputBuscador" [(ngModel)]="name" placeholder="Teclea un pokemon">
+        <button (click)="search()"class="btnBuscador" ><img src="assets/images/pokeball.png" height ="25px" width="25px" /></button>
+            <div class ="box">
+                <img class = "sprite" src="{{urlImage}}">
+            </div>
+</div>
+<div class="pokemon-grid">
+    <div class="box"  *ngFor = "let pokemon of pokemons">
+        <img [src]="pokemon.sprites.front_default" alt="Pokemon" class="pokeimagen">
+        <h1>  {{pokemon.name}}</h1>
+        <p><b>Number: </b> {{pokemon.id}} </p>
+        <p><b>Type: </b> {{pokemon.types[0].type.name}} </p>
+        <p><b>Ability: </b> {{pokemon.abilities[0].ability.name}} </p>
+        <p><b>Move: </b> {{pokemon.moves[0].move.name}} </p>
+
+    </div>
+
+</div> <!--End of pokemon grid-->
